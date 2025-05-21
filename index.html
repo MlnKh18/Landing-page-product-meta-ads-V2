@@ -285,13 +285,13 @@ Bavery Compact Brightening Shower Scrub</pre
       <section id="testimonial-section">
         <div class="ctn-testimonial-content w-full h-auto md:min-h-screen">
           <div class="title-testimonial w-full flex justify-center px-8 sm:px-16 lg:px-30">
-            <span class="text-5xl">✅</span>
+            <span class="text-4xl md:text-5xl">✅</span>
             <h2
-              class="text-3xl md:text-5xl text-[var(--color-primary-red)] font-bold bg-yellow-300 w-auto text-center"
+              class="text-2xl sm:text-3xl md:text-5xl text-[var(--color-primary-red)] font-bold bg-yellow-300 w-auto text-center"
             >
               MEREKA PUN SUDAH MEMBUKTIKAN
             </h2>
-            <span class="text-5xl">✅</span>
+            <span class="text-4xl md:text-5xl">✅</span>
           </div>
           <div
             class="testimonial-image w-full h-1/2 md:min-h-[100vh] flex flex-wrap gap-5 sm:gap-10 md:gap-30 justify-center bg-[url('./images/bg-testimonial.png')] bg-gray-scale bg-cover bg-center px-8 sm:px-16 lg:px-30 py-10"
@@ -332,7 +332,7 @@ Bavery Compact Brightening Shower Scrub</pre
           class="product-offering-content w-full min-h-screen bg-[#70C8FF]/40 px-8 sm:px-16 lg:px-30 flex flex-col items-center pb-20"
         >
           <h3
-            class="text-2xl sm:text-4xl font-bold bg-[#FFA527] text-white w-full md:w-1/2 text-center p-10"
+            class="text-2xl sm:text-4xl font-bold bg-[#FFA527] text-white w-full md:w-1/2 text-center p-5 sm:p-10"
           >
             PENAWARAN KHUSUS HARI INI UNTUK 20 ORANG PERTAMA
           </h3>
@@ -623,26 +623,8 @@ Bavery Compact Brightening Shower Scrub</pre
     <footer class="w-full bg-[#70C8FF] text-gray-200 text-center p-2">
       © 2025 Bavery. All rights reserved
     </footer>
-    <script>
-      document
-        .getElementById("orderForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+    <script src="./assets/js/script.js" type="module">
 
-          var nama = document.getElementById("name").value;
-          var wa = document.getElementById("Whatsapp").value;
-          var alamat = document.getElementById("alamat").value;
-          var produk = document.getElementById("product").value;
-          var jumlah = document.getElementById("jumlah").value;
-
-          var pesan = `Hallo Admin,%0ASaya ingin memesan produk:%0A%0A📦 Product : ${produk}%0A🔢 Jumlah : ${jumlah}%0A👤 Nama : ${nama}%0A📱 No. Whatsapp : ${wa}%0A🏠 Alamat : ${alamat}`;
-
-          var noAdmin = "6282266412189";
-
-          var link = `https://api.whatsapp.com/send?phone=${noAdmin}&text=${pesan}`;
-
-          window.open(link, "_blank");
-        });
     </script>
   </body>
 </html>
