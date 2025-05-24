@@ -4,656 +4,481 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Landing Page ADS</title>
+
+    <title>Bavery Ads</title>
   </head>
-  <body class="w-full min-h-[100vh]">
-    <header class="w-full h-12 bg-[var(--color-background-cyan)]"></header>
-    <main>
-      <section
-        id="hero-section"
-        class="w-full h-1/2 md:min-h-screen flex flex-col items-start justify-center px-8 sm:px-16 lg:px-30 mt-11 sm:mt-22 mb-12"
-      >
-        <div
-          class="ctn-hero-title w-full flex flex-col items-center px-8 sm:px-16 lg:px-30"
-        >
-          <h1
-            class="text-5xl md:text-8xl lg:text-9xl text-[var(--color-primary-red)] font-bold"
-          >
-            STOP!!
-          </h1>
-          <h3
-            class="text-3xl md:text-5xl lg:text-7xl text-[var(--color-primary-red)] font-bold text-center"
-          >
-            JANGAN DI SKIP DULU
-          </h3>
-          <h4
-            class="text-2xl md:text-4xl lg:text-5xl text-[var(--color-primary-dark-blue)] font-bold text-center"
-          >
-            INFO PENTING BUAT KAMU YANG INGIN Kulit Cerah, Lembap, dan Sehat
-            Setiap Hari
-          </h4>
-        </div>
-        <div
-          class="hero-list-skin-characteristics w-full flex flex-col lg:flex-row items-center px-5 mt-10 py-10 bg-[var(--color-background-cyan)]"
-        >
-          <div
-            class="list-characteristics w-full lg:w-1/2 min-h-[350px] flex flex-col justify-between"
-          >
-            <h3
-              class="text-2xl md:text-4xl text-[var(--color-primary-dark-blue)] font-bold text-center md:text-start"
+  <body class="w-full min-h-[100vh] flex justify-center items-center">
+    <main
+      class="w-full sm:w-1/2 md:w-1/4 min-h-screen bg-[var(--color-primary-blue)] p-2"
+    >
+      <section id="info-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-1.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="problem-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-2.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="contained-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-3.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="description-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-4.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="benefit-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-5.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="usage-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-6.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="bpom-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/section-7.png"
+          alt="Section One"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="testimoni-section" class="w-full min-h-auto">
+        <div class="w-full flex flex-col">
+          <img src="./images-2/Label 1.png" alt="Label 1" class="w-full" />
+          <div class="ctn-slider relative">
+            <div
+              id="slider"
+              class="w-full flex overflow-scroll sm:overflow-hidden scroll-smooth"
             >
-              ‼️ PERNAH MENGALAMI MASALAH INI? ‼️
-            </h3>
-            <ul class="mt-2 md:mt-5 list-disc flex flex-col gap-5 px-5">
-              <li
-                class="text-md sm:text-lg lg:text-xl font-semibold text-[var(--color-primary-dark-blue)]"
+              <div class="card flex-shrink-0 w-full">
+                <img
+                  src="./images-2/Review 1.png"
+                  alt="Review 1"
+                  class="full object-cover"
+                />
+              </div>
+              <div class="card flex-shrink-0 w-full">
+                <img
+                  src="./images-2/Review 2.png"
+                  alt="Review 1"
+                  class="full object-cover"
+                />
+              </div>
+              <div class="card flex-shrink-0 w-full">
+                <img
+                  src="./images-2/Review 3.png"
+                  alt="Review 1"
+                  class="full object-cover"
+                />
+              </div>
+            </div>
+            <div class="w-full flex absolute top-[50%] justify-between gap-2">
+              <button
+                id="prevBtn"
+                class="bg-[var(--color-primary-dark-blue)] text-white px-2 rounded-xl shadow"
               >
-                Kulit kusam dan tidak bercahaya?
-              </li>
-              <li
-                class="text-md sm:text-lg lg:text-xl font-semibold text-[var(--color-primary-dark-blue)]"
+                <i class="fa-solid fa-arrow-left text-sm"></i>
+              </button>
+              <button
+                id="nextBtn"
+                class="bg-[var(--color-primary-dark-blue)] text-white px-2 rounded-xl shadow"
               >
-                Permukaan kulit kasar dan tidak halus?
-              </li>
-              <li
-                class="text-md sm:text-lg lg:text-xl font-semibold text-[var(--color-primary-dark-blue)]"
-              >
-                Kulit terasa kering setelah mandi?
-              </li>
-              <li
-                class="text-md sm:text-lg lg:text-xl font-semibold text-[var(--color-primary-dark-blue)]"
-              >
-                Paparan polusi membuat kulit tampak lelah?
-              </li>
-              <li
-                class="text-md sm:text-lg lg:text-xl font-semibold text-[var(--color-primary-dark-blue)]"
-              >
-                Tidak percaya diri karena warna kulit tidak merata?
-              </li>
-            </ul>
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div>
           </div>
-          <div
-            class="images-characteristics w-full lg:w-1/2 flex flex-wrap justify-center lg:justify-end gap-4 mt-10 lg:mt-0"
-          >
-            <img
-              src="./images/Problem Image 1.png"
-              alt="characteristics"
-              class="w-2/5"
-            />
-            <img
-              src="./images/Problem Image 2.png"
-              alt="characteristics"
-              class="w-2/5"
-            />
-            <img
-              src="./images/Problem Image 3.png"
-              alt="characteristics"
-              class="w-2/5"
-            />
-            <img
-              src="./images/Problem Image 4.png"
-              alt="characteristics"
-              class="w-2/5"
-            />
+          <!-- Navigation Buttons -->
+          <div class="nav-badge-review-card hidden md:flex">
+            <!-- Badge Section -->
+            <div
+              class="w-full md:w-1/2 flex justify-center md:justify-end gap-1 flex-wrap my-5"
+            >
+              <!-- Badge 1 -->
+              <div class="badge active"></div>
+              <!-- Badge 2 -->
+              <div class="badge"></div>
+              <!-- Badge 3 -->
+              <div class="badge"></div>
+              <!-- Badge 4 -->
+              <div class="badge"></div>
+            </div>
           </div>
         </div>
       </section>
-      <section
-        id="solution-section"
-        class="w-full h-1/2 md:min-h-screen flex flex-col items-start justify-start px-8 sm:px-16 lg:px-30"
-      >
+      <section id="video-section" class="w-full min-h-auto">
+        <div class="w-full h-auto flex flex-col">
+          <div
+            class="ctn-slider min-h-[300px] relative bg-[url('./images-2/Background-video.png')] bg-cover"
+          >
+            <div
+              id="slider-video"
+              class="w-full flex overflow-scroll sm:overflow-hidden scroll-smooth"
+            >
+              <div class="card-video flex-shrink-0 w-full">
+                <div class="aspect-video w-full h-[500px]">
+                  <iframe
+                    class="w-full h-[500px]"
+                    src="https://www.youtube.com/embed/28mp2pTAOaM?si=ogDM5uuqJEDYk3xY"
+                    title="Video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="w-full flex absolute top-[50%] justify-between gap-2">
+              <button
+                id="prevBtn"
+                class="bg-[var(--color-primary-dark-blue)] text-white px-2 rounded-xl shadow"
+              >
+                <i class="fa-solid fa-arrow-left text-sm"></i>
+              </button>
+              <button
+                id="nextBtn"
+                class="bg-[var(--color-primary-dark-blue)] text-white px-2 rounded-xl shadow"
+              >
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+              </button>
+            </div> -->
+          </div>
+          <!-- Navigation Buttons -->
+          <div class="nav-badge-review-card hidden md:flex">
+            <!-- Badge Section -->
+            <div
+              class="w-full md:w-1/2 flex justify-center md:justify-end gap-1 flex-wrap my-5"
+            >
+              <!-- Badge 1 -->
+              <div class="badge active"></div>
+              <!-- Badge 2 -->
+              <div class="badge"></div>
+              <!-- Badge 3 -->
+              <div class="badge"></div>
+              <!-- Badge 4 -->
+              <div class="badge"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sold-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/Label 2.png"
+          alt="Label Two"
+          class="w-full object-cover"
+        />
+        <img
+          src="./images-2/Section-8.png"
+          alt="Label Two"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="booking-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/Section-9.png"
+          alt="Label Two"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="form-section" class="w-full min-h-auto">
         <div
-          class="ctn-solution-content w-full h-full flex flex-col items-center justify-start bg-[#B7E3FF]"
+          class="shadow-md rounded-lg p-6 w-full mx-auto flex flex-col items-start bg-[var(--color-primary-blue)]"
         >
           <h2
-            class="text-3xl md:text-5xl text-[var(--color-primary-red)] font-bold bg-yellow-300 my-10 md:my-20"
+            class="text-2xl font-bold text-center mb-4 text-[var(--color-primary-dark-blue)]"
           >
-            SAATNYA BERUBAH✅
+            Form Pemesanan
           </h2>
-          <h4
-            id="solution-subtitle"
-            class="text-4xl text-[var(--color-primary-dark-blue)] font-bold text-center"
-          >
-            Bavery Compact Brightening Shower Scrub
-          </h4>
-          <div
-            class="ctn-list-solution-content w-11/12 lg:w-2/3 min-h-[350px] flex flex-col my-5 gap-5 p-5 lg:p-0 justify-center mx-auto"
-          >
-            <p class="text-xl text-center">
-              Hadir dengan formula lembut namun efektif untuk membersihkan,
-              mengeksfoliasi ringan, dan mencerahkan kulit Anda. Diperkaya
-              dengan:
-            </p>
-
-            <div class="list-content flex flex-col gap-5">
-              <!-- Item 1 -->
-              <div class="flex flex-wrap sm:flex-nowrap gap-3 items-start">
-                <div
-                  class="w-full sm:w-1/2 text-sm sm:text-md md:text-lg lg:text-xl font-bold"
-                >
-                  👍🏻 Niacinamide
-                </div>
-                <div class="w-full sm:w-1/2 text-sm sm:text-md sm:text-lg ml-5 sm:ml-0">
-                  : Membantu mencerahkan dan meratakan warna kulit.
-                </div>
-              </div>
-
-              <!-- Item 2 -->
-              <div class="flex flex-wrap sm:flex-nowrap gap-3 items-start">
-                <div
-                  class="w-full sm:w-1/2 text-sm sm:text-md md:text-lg lg:text-xl font-bold"
-                >
-                  👍🏻 Collagen
-                </div>
-                <div class="w-full sm:w-1/2 text-sm sm:text-md sm:text-lg ml-5 sm:ml-0">
-                  : Menjaga elastisitas dan kelembapan kulit.
-                </div>
-              </div>
-
-              <!-- Item 3 -->
-              <div class="flex flex-wrap sm:flex-nowrap gap-3 items-start">
-                <div
-                  class="w-full sm:w-1/2 text-sm sm:text-md md:text-lg lg:text-xl font-bold"
-                >
-                  👍🏻 Vitamin E
-                </div>
-                <div class="w-full sm:w-1/2 text-sm sm:text-md sm:text-lg ml-5 sm:ml-0">
-                  : Melindungi kulit dari radikal bebas dan menjaga kelembapan.
-                </div>
-              </div>
-
-              <!-- Item 4 -->
-              <div class="flex flex-wrap sm:flex-nowrap gap-3 items-start">
-                <div
-                  class="w-full sm:w-1/2 text-sm sm:text-md md:text-lg lg:text-xl font-bold"
-                >
-                  👍🏻 Hydro Silica Scrub
-                </div>
-                <div class="w-full sm:w-1/2 text-sm sm:text-md sm:text-lg ml-5 sm:ml-0">
-                  : Membersihkan sel kulit mati dengan lembut tanpa iritasi.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="image-product-with-leaf w-5/6">
-            <img
-              src="./images/products-with-leaf.png"
-              alt="Products with leaf"
-              class="w-full mt-20 mt-0"
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        id="product-description-section"
-        class="w-full min-h-screen flex flex-col items-start justify-start bg-[url('./images/actor-1.jpg')] bg-center no-repeat bg-auto my-10"
-      >
-        <div
-          class="product-description-content w-full min-h-screen bg-[#70C8FF]/80 px-8 sm:px-16 lg:px-30 py-10"
-        >
-          <div
-            class="ctn-description-content w-full h-auto flex flex-col gap-5"
-          >
-            <div
-              class="desc-content w-full h-auto lg:h-[400px] flex flex-col flex-col-reverse lg:flex-row gap-5"
-            >
-              <div
-                class="text-description w-full lg:w-1/2 bg-[var(--color-primary-dark-blue)] text-white p-10"
+          <form id="orderForm" class="space-y-4 w-full">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
               >
-                <p class="text-lg sm:text-2xl">
-                  <b>Bavery Compact Brightening Shower Scrub</b> adalah sabun
-                  mandi cair dengan formula lembut dan efektif yang
-                  menggabungkan manfaat pembersihan, eksfoliasi ringan, serta
-                  mencerahkan kulit. Diperkaya dengan Niacinamide, Collagen,
-                  Vitamin E, dan Hydro Sillica Scrub, produk ini membantu
-                  membersihkan kulit dari kotoran, debu, dan polusi, sekaligus
-                  melembapkan dan menjaga elastisitas kulit.
-                </p>
-              </div>
-              <div class="image-product-desc w-full lg:w-1/2">
-                <img
-                  src="./images/products.jpg"
-                  alt="Produtcs Image"
-                  class="w-full h-full object-cover object-center"
-                />
-              </div>
-            </div>
-            <div
-              class="benefit-content w-full h-auto lg:h-[400px] flex gap-5 bg-white"
-            >
-              <div class="img-actor-side hidden lg:block">
-                <img
-                  src="./images/actor-2.png"
-                  alt="Actor Image"
-                  class="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div
-                class="list-benefit w-full lg:w-2/3 text-[var(--color-primary-dark-blue)] p-5"
-              >
-                <h3 class="text-lg lg:text-2xl font-bold">MANFAAT PRODUK:</h3>
-                <ul
-                  class="text-description p-5 list-disc flex flex-col gap-2 font-semibold"
-                >
-                  <li class="text-lg lg:text-xl">
-                    Membantu mencerahkan kulit tubuh secara alami
-                  </li>
-                  <li class="text-lg lg:text-xl">
-                    Membersihkan kulit dari kotoran, polusi, dan debuli
-                  </li>
-                  <li class="text-lg lg:text-xl">
-                    Sebagai eksfoliator lembut (soft exfoliant)
-                  </li>
-                  <li class="text-lg lg:text-xl">
-                    Membantu menghilangkan bekas jerawat ringan di tubuh
-                  </li>
-                  <li class="text-lg lg:text-xl">
-                    Membuat kulit terasa lembut, kenyal, dan segar
-                  </li>
-                  <li class="text-lg lg:text-xl">
-                    Berfungsi sebagai antioksidan untuk melindungi kulit dari
-                    radikal bebas
-                  </li>
-                  <li class="text-lg lg:text-xl">
-                    Memberikan keharuman yang menyenangkan setelah mandi
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="product-knowledge-content w-full h-auto lg:h-[400px] flex flex-col flex-col-reverse lg:flex-row gap-5"
-            >
-              <div
-                class="desc-knowledge w-full lg:w-1/2 h-full bg-white p-8 sm:p-16 flex flex-col justify-between gap-5"
-              >
-                <h3 class="text-lg md:text-2xl font-bold">PRODUCT KNOWLEDGE</h3>
-                <h4 class="text-lg md:text-2xl">
-                  Nama Product:
-                  <pre class="text-lg md:text-2xl text-wrap">
-Bavery Compact Brightening Shower Scrub</pre
-                  >
-                </h4>
-                <div class="list-content flex gap-2">
-                  <ul class="w-auto flex flex-col gap-2">
-                    <li class="text-lg md:text-2xl">Kategori</li>
-                    <li class="text-lg md:text-2xl">Isi Bersih</li>
-                    <li class="text-lg md:text-2xl">BPOM</li>
-                  </ul>
-                  <ul class="w-auto flex flex-col gap-2">
-                    <li class="text-lg md:text-2xl">
-                      : Shower Cream / Sabun Mandi Cair
-                    </li>
-                    <li class="text-lg md:text-2xl">: 300 ml</li>
-                    <li class="text-lg md:text-2xl">: NA18240702111</li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="knowledge-image w-full lg:w-1/2 bg-[var(--color-primary-dark-blue)]"
-              >
-                <img
-                  src="./images/product-bpom.png"
-                  alt="Produtcs Image"
-                  class="w-full h-full object-contain object-center p-5"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="testimonial-section">
-        <div class="ctn-testimonial-content w-full h-auto md:min-h-screen">
-          <div
-            class="title-testimonial w-full flex justify-center px-8 sm:px-16 lg:px-30"
-          >
-            <span class="text-4xl md:text-5xl">✅</span>
-            <h2
-              class="text-2xl sm:text-3xl md:text-5xl text-[var(--color-primary-red)] font-bold bg-yellow-300 w-auto text-center"
-            >
-              MEREKA PUN SUDAH MEMBUKTIKAN
-            </h2>
-            <span class="text-4xl md:text-5xl">✅</span>
-          </div>
-          <div
-            class="testimonial-image w-full h-1/2 md:min-h-[100vh] flex flex-wrap gap-5 sm:gap-10 md:gap-30 justify-center bg-[url('./images/bg-testimonial.png')] bg-gray-scale bg-cover bg-center px-8 sm:px-16 lg:px-30 py-10"
-          >
-            <img
-              src="./images/testimoni-1.png"
-              alt="Testimoni 1"
-              class="w-1/3 md:w-1/4 h-1/2 md:h-auto"
-            />
-            <img
-              src="./images/testimoni-2.png"
-              alt="Testimoni 2"
-              class="w-1/3 md:w-1/4 h-1/2 md:h-auto"
-            />
-            <img
-              src="./images/testimoni-3.png"
-              alt="Testimoni 3"
-              class="w-1/3 md:w-1/4 h-1/2 md:h-auto"
-            />
-            <img
-              src="./images/testimoni-4.png"
-              alt="Testimoni 4"
-              class="w-1/3 md:w-1/4 h-1/2 md:h-auto"
-            />
-            <img
-              src="./images/testimoni-5.png"
-              alt="Testimoni 5"
-              class="w-1/3 md:w-1/4 h-1/2 md:h-auto"
-            />
-          </div>
-        </div>
-      </section>
-      <section
-        id="product-offering-section"
-        class="w-full min-h-screen flex flex-col items-start justify-start bg-[url('./images/actor-3.png')] bg-cover"
-      >
-        <div
-          class="product-offering-content w-full min-h-screen bg-[#70C8FF]/40 px-8 sm:px-16 lg:px-30 flex flex-col items-center pb-20"
-        >
-          <h3
-            class="text-2xl sm:text-4xl font-bold bg-[#FFA527] text-white w-full md:w-1/2 text-center p-5 sm:p-10"
-          >
-            PENAWARAN KHUSUS HARI INI UNTUK 20 ORANG PERTAMA
-          </h3>
-
-          <div class="subtitle-offering w-full items-center">
-            <h4 class="text-3xl font-bold text-white w-full text-center my-10">
-              TELAH TERJUAL LEBIH DARI
-            </h4>
-            <h1
-              class="text-5xl md:text-7xl font-bold text-[#FFA527] w-full text-center stroke-text py-2"
-            >
-              3,000,000
-            </h1>
-            <p class="text-white w-full text-center">PCS keseluruh Indonesia</p>
-          </div>
-          <div class="ctn-card-product-offering w-full mt-20">
-            <div class="card-product-offering w-full flex gap-5">
-              <div
-                class="img-product-offering w-1/2 h-1/4 md:h-auto p-3 sm:p-5 bg-white flex flex-col justify-between shadow-xl gap-5 md:gap-0"
-              >
-                <img
-                  src="./images/products.jpg"
-                  alt="Product Offering"
-                  class="w-full"
-                />
-                <h4 class="text-md sm:text-lg md:text-2xl">
-                  COMPACT BRIGHTENING SHOWER SCRUB - SABUN MANDI PENCERAH &
-                  MELEMBABKAN KULIT
-                </h4>
-                <p class="w-[90px] text-gray-300 relative">
-                  Rp. 82.000
-                  <span
-                    class="absolute top-3 left-0 w-full h-[2px] bg-[var(--color-primary-red)]"
-                  ></span>
-                </p>
-                <h2 class="text-xl sm:text-4xl font-bold text-[#FFA527]">
-                  Rp. 65.604
-                </h2>
-                <button
-                  class="w-full py-2 sm:py-4 bg-[#FFA527] text-center text-lg sm:text-xl text-white"
-                >
-                  Pesan Sekarang
-                </button>
-              </div>
-              <div
-                class="img-product-offering w-1/2 h-1/3 md:h-auto p-3 sm:p-5 bg-white flex flex-col gap-5 md:gap-0 justify-between shadow-xl"
-              >
-                <img
-                  src="./images/products.jpg"
-                  alt="Product Offering"
-                  class="w-full"
-                />
-                <h4 class="text-md sm:text-lg md:text-2xl">
-                  <b>BUNDLE 2 PCS</b> - COMPACT BRIGHTENING SHOWER SCRUB - SABUN
-                  MANDI PENCERAH & MELEMBABKAN KULIT
-                </h4>
-                <p class="w-[90px] text-gray-300 relative">
-                  Rp. 131.208
-                  <span
-                    class="absolute top-3 left-0 w-full h-[2px] bg-[var(--color-primary-red)]"
-                  ></span>
-                </p>
-                <h2 class="text-xl sm:text-4xl font-bold text-[#FFA527]">
-                  Rp. 113.208
-                </h2>
-                <button
-                  class="w-full py-2 sm:py-4 bg-[#FFA527] text-center text-lg sm:text-xl text-white"
-                >
-                  Pesan Sekarang
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="order-section" class="w-full min-h-screen bg-gray-100">
-        <div
-          class="w-full mx-auto py-12 bg-[#DAF1FF] flex flex-col items-center gap-5 p-8"
-        >
-          <div
-            class="bg-white shadow-md rounded-lg p-6 w-full md:w-1/2 lg:w-1/3 mx-auto flex flex-col items-start"
-          >
-            <h2
-              class="text-2xl font-bold text-center mb-4 text-[var(--color-primary-dark-blue)]"
-            >
-              Form Pemesanan
-            </h2>
-            <form id="orderForm" class="space-y-4 w-full">
-              <div>
-                <label
-                  for="name"
-                  class="block text-sm font-medium text-gray-700"
-                  >Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  class="mt-1 w-full border-gray-300 rounded-md shadow-sm p-2"
-                  placeholder="Masukkan nama"
-                />
-              </div>
-
-              <div>
-                <label
-                  for="Whatsapp"
-                  class="block text-sm font-medium text-gray-700"
-                  >No. Whatsapp</label
-                >
-                <input
-                  type="text"
-                  id="Whatsapp"
-                  class="mt-1 w-full border-gray-300 rounded-md shadow-sm p-2"
-                  placeholder="Masukkan Nomer Whatsapp"
-                />
-              </div>
-
-              <div>
-                <label
-                  for="alamat"
-                  class="block text-sm font-medium text-gray-700"
-                  >Alamat</label
-                >
-                <textarea
-                  id="alamat"
-                  name="alamat"
-                  rows="4"
-                  placeholder="Masukkan alamat lengkap..."
-                  class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                ></textarea>
-              </div>
-
-              <div>
-                <label
-                  for="product"
-                  class="block text-sm font-medium text-gray-700"
-                  >Product</label
-                >
-                <input
-                  type="text"
-                  id="product"
-                  class="mt-1 w-full border-gray-300 rounded-md shadow-sm p-2 text-gray-700"
-                  value="Bavery Compact Brightening Shower Scrub"
-                  disabled
-                />
-              </div>
-
-              <div class="w-1/3">
-                <label
-                  for="jumlah"
-                  class="block text-sm font-medium text-gray-700"
-                  >Jumlah</label
-                >
-                <input
-                  type="number"
-                  id="jumlah"
-                  name="jumlah"
-                  placeholder="Jumlah"
-                  class="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-
-              <button
-                type="submit"
-                class="w-full py-3 bg-[#FFA527] text-white text-center rounded-md"
-              >
-                Pesan Sekarang
-              </button>
-            </form>
-          </div>
-          <a
-            href="https://wa.me/6282266412189?text=Hai+saya%2C+Ingin+bertanya+tentang+Bavery+Compact+Brightening+Shower+Scrub"
-            class="w-full md:w-1/3 py-3 bg-[#0BE028] text-white text-center rounded-lg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="w-full flex justify-center items-center gap-5">
-              <img
-                src="./images/Whatsapp Icon.png"
-                alt="WhatApp Icon"
-                class="w-5"
+              <input
+                type="text"
+                id="name"
+                class="mt-1 w-full border-gray-300 rounded-md shadow-sm p-2 bg-white"
+                placeholder="Masukkan nama"
               />
-              <span>Konsultasi dengan admin</span>
             </div>
-          </a>
-        </div>
-      </section>
-      <section id="footer-section" class="bg-[var(--color-primary-dark-blue)]">
-        <div
-          class="ctn-footer-content flex flex-col md:flex-row w-full min-h-auto px-8 sm:px-16 lg:px-30 py-10"
-        >
-          <div
-            class="question-footer w-full md:w-1/2 h-auto flex flex-col justify-between"
-          >
-            <h2 class="text-4xl text-[var(--color-primary-white)]">FAQ‼️</h2>
-            <ul
-              class="list-disc px-5 mt-5 md:mt-20 flex flex-col gap-4 md:gap-8"
-            >
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Apakah Bavery Compact Brightening Shower Scrub aman untuk semua
-                jenis kulit?
-              </li>
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Apakah bisa digunakan setiap hari?
-              </li>
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Apakah Bavery bisa digunakan oleh pria?
-              </li>
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Apakah produk ini sudah terdaftar di BPOM?
-              </li>
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Apakah bisa membantu mengatasi kulit belang atau tidak merata?
-              </li>
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Apakah Bavery bisa digunakan untuk remaja?
-              </li>
-              <li class="text-md sm:text-lg text-[var(--color-primary-white)]">
-                Bagaimana cara penyimpanannya?
-              </li>
-            </ul>
-          </div>
-          <div
-            class="ctn-link-sosmedfooter w-full md:w-1/2 h-auto mt-10 md:mt-0 flex flex-col justify-between rounded-lg"
-          >
-            <div
-              class="link-sosmed w-full min-h-40 flex flex-col bg-white rounded-2xl justify-center"
-            >
-              <h3
-                class="w-full h-[50px] bg-[#70C8FF] text-white text-center text-3xl font-bold rounded-t-xl text-center flex items-center justify-center"
+
+            <div>
+              <label
+                for="Whatsapp"
+                class="block text-sm font-medium text-gray-700"
+                >No. Whatsapp</label
               >
-                IKUTI KAMI
-              </h3>
-              <div class="sosmed-ctn flex flex-col p-10">
-                <a
-                  href="https://www.instagram.com/bavery.id/"
-                  class="my-2 bg-[#FF7227] p-5 rounded-xl flex items-center gap-5"
-                >
-                  <img
-                    src="./images/Shopee Icon.png"
-                    alt="Instagram Icon"
-                    class="w-7"
-                  />
-                  <p class="text-white">Shopee | Bavery Beauty</p>
-                </a>
-                <a
-                  href="https://www.tiktok.com/@bavery.id"
-                  class="my-2 bg-[#000000] p-5 rounded-xl flex items-center gap-5"
-                >
-                  <img
-                    src="./images/Tiktok Icon.png"
-                    alt="Tiktok Icon"
-                    class="w-10"
-                  />
-                  <p class="text-white">TikTok Shop | Bavery Beauty</p>
-                </a>
-                <hr class="text-gray-300 my-10" />
-                <p class="text-center">Sosial Media Kami</p>
-                <div class="flex justify-center gap-5 mt-10">
-                  <a
-                    href="https://www.instagram.com/bavery.id/"
-                    class="border-[1px] border-gray-300 p-2 rounded-lg"
-                  >
-                    <img
-                      src="./images/Instagram Icon.png"
-                      alt="Instagram Icon"
-                      class="w-10"
-                    />
-                  </a>
-                  <a
-                    href="https://www.tiktok.com/@bavery.id"
-                    class="border-[1px] border-gray-300 p-2 rounded-lg"
-                  >
-                    <img
-                      src="./images/Tiktok Small Icon.png"
-                      alt="Tiktok Icon"
-                      class="w-10"
-                    />
-                  </a>
-                  <a
-                    href="https://www.facebook.com/bavery.id"
-                    class="border-[1px] border-gray-300 p-2 rounded-lg"
-                  >
-                    <img
-                      src="./images/Facebook Icon.png"
-                      alt="Facebook Icon"
-                      class="w-10"
-                    />
-                  </a>
-                </div>
+              <input
+                type="text"
+                id="Whatsapp"
+                class="mt-1 w-full border-gray-300 rounded-md shadow-sm p-2 bg-white"
+                placeholder="Masukkan Nomer Whatsapp"
+              />
+            </div>
+
+            <div>
+              <label
+                for="alamat"
+                class="block text-sm font-medium text-gray-700"
+                >Alamat</label
+              >
+              <textarea
+                id="alamat"
+                name="alamat"
+                rows="4"
+                placeholder="Masukkan alamat lengkap..."
+                class="w-full p-3 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+              ></textarea>
+            </div>
+
+            <div>
+              <label
+                for="product"
+                class="block text-sm font-medium text-gray-700"
+                >Product</label
+              >
+              <input
+                type="text"
+                id="product"
+                class="mt-1 w-full border-gray-300 rounded-md shadow-sm p-2 bg-[#ECECEC] text-[#D1D1D1]"
+                value="Bavery Compact Brightening Shower Scrub"
+                disabled
+              />
+            </div>
+
+            <div class="w-1/3">
+              <label
+                for="jumlah"
+                class="block text-sm font-medium text-gray-700"
+                >Jumlah</label
+              >
+              <input
+                type="number"
+                id="jumlah"
+                name="jumlah"
+                placeholder="Jumlah"
+                class="mt-1 w-full border border-gray-300 rounded-md shadow-sm p-2 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-3 bg-[#FFA527] text-white text-center rounded-md"
+            >
+              Pesan Sekarang
+            </button>
+            <button
+              href="https://wa.me/6282266412189?text=Hai+saya%2C+Ingin+bertanya+tentang+Bavery+Compact+Brightening+Shower+Scrub"
+              class="w-full py-4 bg-[#03BD38] text-white text-center rounded-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="w-full flex justify-center items-center gap-5">
+                <img
+                  src="./images/Whatsapp Icon.png"
+                  alt="WhatApp Icon"
+                  class="w-5"
+                />
+                <span>Konsultasi dengan admin</span>
               </div>
+            </button>
+          </form>
+        </div>
+      </section>
+      <section id="mitra-section" class="w-full min-h-auto bg-yellow-300">
+        <img
+          src="./images-2/Section-10.png"
+          alt="Label Two"
+          class="w-full object-cover"
+        />
+      </section>
+      <section id="faq-section" class="w-full min-h-auto bg-[#ADE0FF] py-10">
+        <h2
+          class="text-2xl font-bold text-[var(--color-primary-white)] text-center"
+        >
+          FAQ‼️
+        </h2>
+
+        <div class="w-full max-w-xl mx-auto mt-8">
+          <!-- Item -->
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Apakah Bavery Compact Brightening Shower Scrub aman untuk semua
+                jenis kulit?
+              </span>
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Ya, produk ini diformulasikan dengan bahan-bahan yang lembut dan
+              aman, cocok untuk semua jenis kulit.
+            </div>
+          </div>
+
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Apakah bisa digunakan setiap hari?</span
+              >
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Bisa. Kandungan scrub-nya lembut dan tidak menyebabkan iritasi,
+              sehingga aman digunakan setiap kali mandi.
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Apakah Bavery bisa digunakan oleh pria?</span
+              >
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Tentu saja! Bavery dirancang untuk semua gender. Manfaatnya bisa
+              dirasakan baik oleh pria maupun wanita.
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Apakah produk ini sudah terdaftar di BPOM?</span
+              >
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Ya, Sabun mandi Bavery telah terdaftar resmi di BPOM dan telah melalui QC & QA sehingga terjamin keamanannya.
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Apakah bisa membantu mengatasi kulit belang atau tidak merata?</span
+              >
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Dengan pemakaian rutin, kandungan Niacinamide dalam Bavery membantu mencerahkan kulit dan meratakan warna kulit secara bertahap.
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Apakah Bavery bisa digunakan untuk remaja?</span
+              >
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Bisa. Formula Bavery aman untuk remaja mulai usia 15 tahun ke atas
+            </div>
+          </div>
+          <div class="overflow-hidden">
+            <button
+              onclick="toggleAccordion(this)"
+              class="w-full flex items-center gap-3 p-4 text-[var(--color-primary-dark-blue)] font-semibold"
+            >
+              <i
+                class="icon fa-solid fa-caret-right transition-transform duration-300"
+              ></i>
+              <span class="text-left flex-1"
+                >Bagaimana cara penyimpanannya?</span
+              >
+            </button>
+            <div
+              class="accordion-content hidden p-4 text-[var(--color-primary-white)] bg-[var(--color-primary-dark-blue)]"
+            >
+              Simpan di tempat sejuk dan kering, hindari paparan sinar matahari langsung agar kualitas produk tetap terjaga.
             </div>
           </div>
         </div>
       </section>
+
+      <script>
+        function toggleAccordion(button) {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector(".icon");
+
+          content.classList.toggle("hidden");
+
+          // Toggle icon class
+          if (content.classList.contains("hidden")) {
+            icon.classList.remove("fa-caret-down");
+            icon.classList.add("fa-caret-right");
+          } else {
+            icon.classList.remove("fa-caret-right");
+            icon.classList.add("fa-caret-down");
+          }
+        }
+      </script>
     </main>
-    <footer class="w-full bg-[#70C8FF] text-gray-200 text-center p-2">
-      © 2025 Bavery. All rights reserved
-    </footer>
     <script src="./assets/js/script.js" type="module"></script>
   </body>
 </html>

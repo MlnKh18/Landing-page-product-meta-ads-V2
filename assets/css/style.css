@@ -5,6 +5,7 @@
   --color-primary-black: #000;
   --color-primary-red: #ee1111;
   --color-background-cyan: #f0fcff;
+  --color-primary-blue: #c2e8ff;
   --color-primary-dark-blue: #003f66;
   --fonts-family: "Libre Caslon Text", serif;
 }
@@ -17,4 +18,56 @@
 .stroke-text {
   -webkit-text-stroke: 2px var(--color-primary-white);
   color: #ffa527;
+}
+
+#slider .card {
+  display: flex;
+  flex-direction: column;
+  /* flex: 0 0 calc((100% - 32px) / 3); 32px = 2 gap-4 (16px) antar 3 card */
+  justify-content: space-between;
+  align-items: start;
+  background-color: var(--color-primary-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+  gap: 10px;
+}
+#slider-video .card-video {
+  display: flex;
+  flex-direction: column;
+  /* flex: 0 0 calc((100% - 32px) / 3); 32px = 2 gap-4 (16px) antar 3 card */
+  justify-content: space-between;
+  align-items: start;
+  background-color: var(--color-primary-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  gap: 10px;
+}
+
+
+.badge {
+  width: 7px;
+  height: 7px;
+  background-color: #e5e7eb; /* warna gray-200 */
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.badge.active {
+  width: 35px;
+  background-color: var(--color-primary-dark-blue);
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+#hero-button:hover,
+#prevBtn:hover,
+#nextBtn:hover {
+  transition: all 0.3s ease;
+  background-color: var(--color-white);
+  color: var(--color-primary-dark-blue);
+  shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
 }
